@@ -1,0 +1,32 @@
+--SELECT * FROM Customers;
+--SELECT DISTINCT country FROM Customers;
+--SELECT * FROM Customers WHERE CustomerID LIKE 'Bl%';
+--SELECT TOP 100 OrderID FROM Orders;
+--SELECT * FROM Customers WHERE PostalCode='1010' OR PostalCode='3012' OR PostalCode='12209' OR PostalCode='05023';
+--SELECT * FROM Orders WHERE ShipRegion IS NOT NULL;
+--SELECT * FROM Customers ORDER BY Country, City;
+--INSERT INTO Customers(CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax);
+--VALUES('12345','MitchCo','Mitch','Vice Emperor','123 W Pennsylvania Ave.','Reno','NV',55123,'United States','(+1-734)528-1246','(+1-818)224-1546');
+--UPDATE Orders SET ShipRegion='EuroZone' WHERE ShipCountry='FRANCE';
+--DELETE FROM [Order Details] WHERE Quantity=1;
+
+--SELECT AVG(Quantity) FROM [Order Details];
+--SELECT MIN(Quantity) FROM [Order Details];
+--SELECT MAX(Quantity) FROM [Order Details];
+
+--SELECT AVG(Quantity) FROM [Order Details] group by OrderID;
+--SELECT MIN(Quantity) FROM [Order Details] group by OrderID;
+--SELECT MAX(Quantity) FROM [Order Details] group by OrderID;
+--SELECT CustomerID FROM Orders WHERE OrderID=10290;
+
+--SELECT * FROM Orders 
+--INNER JOIN Customers ON Customers.CustomerID = Orders.CustomerID;
+
+--SELECT * FROM Orders 
+--LEFT JOIN Customers ON Customers.CustomerID = Orders.CustomerID;
+
+--SELECT * FROM Orders 
+--RIGHT JOIN Customers ON Customers.CustomerID = Orders.CustomerID;
+
+--SELECT FirstName FROM Employees WHERE ReportsTo IS NULL;
+--SELECT FirstName FROM Employees WHERE ReportsTo=2;
